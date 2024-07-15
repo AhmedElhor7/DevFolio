@@ -1,0 +1,132 @@
+/* start global */
+/* start global */
+:root {
+  --main-color: rgb(255, 255, 255);
+  --main-secndry-color: rgb(78, 78, 78);
+  --main-before-color: #0078ff;
+  --main-hover-color: #cde1f8;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #f5f5f5;
+}
+
+.i-shape {
+  color: black;
+  font-size: 2rem;
+  padding: 1.5rem 1.5rem;
+  border: solid 0.5rem var(--main-before-color);
+  border-radius: 50%;
+  margin-bottom: 0.5rem;
+  transition: all ease-in-out 0.5s;
+}
+
+/* end global */
+
+/* start nav  */
+.navbar-brand,
+.nav-link,
+nav .nav-link.show,
+.nav-link:focus,
+.nav-link:hover {
+  color: var(--main-color);
+  --bs-navbar-active-color: var(--main-color);
+  --bs-emphasis-color-rgb: var(--main-color);
+}
+/* end nav  */
+
+/* start header section */
+header {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("../images/Images01.jpg");
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+  .h1-size {
+    font-size: 4.5rem;
+  }
+  .h2-size {
+    font-size: 2.75rem;
+  }
+}
+/* end header section */
+
+/* start about section */
+section .about-content {
+  background-color: #fff;
+  margin-bottom: 3rem;
+  z-index: 2;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.06), 0 2px 5px 0 rgba(0, 0, 0, 0.2);
+}
+
+.main-progress span {
+  font-weight: 300;
+  color: var(--main-secndry-color);
+  font-size: 0.75rem;
+}
+.main-progress .html {
+  width: 85%;
+}
+.main-progress .js {
+  width: 90%;
+}
+.about ul li span {
+  color: var(--main-secndry-color);
+}
+.about-me h5::before {
+  content: "";
+  position: absolute;
+  height: 3px;
+  background-color: var(--main-before-color);
+  width: 100px;
+  bottom: -12px;
+}
+.about-me p {
+  color: var(--main-secndry-color);
+}
+.deatlis ul li {
+  line-height: 2.5;
+}
+/* end about section */
+
+/* Start Service Section */
+.content-title p::before {
+  content: "";
+  position: absolute;
+  height: 0.25rem;
+  background-color: var(--main-before-color);
+  width: 2rem;
+  left: 48.5%;
+  top: 2rem;
+}
+.card-content {
+  background-color: var(--main-color);
+}
+.card-content:hover i {
+  background-color: var(--main-before-color);
+  border: solid 0.5rem var(--main-hover-color);
+  color: white;
+}
+.card-content p {
+  font-size: 0.8rem;
+}
+
+/* End Service Section */
+
+/*  Start Counter Section */
+.summary-info {
+  padding: 8rem 0;
+  background: linear-gradient(rgba(0, 120, 255, 0.5), rgba(0, 120, 255, 0.5)),
+    url("../images/Images03.jpg");
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.summary-info .i-shape {
+  color: white;
+  font-size: 1.5rem;
+  padding: 1rem 1rem;
+  border: solid 0.5rem var(--main-hover-color);
+}
+/* End Counter Section */
